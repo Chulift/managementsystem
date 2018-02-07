@@ -1,4 +1,4 @@
-package com.github.chulift.managementsystem;
+package com.github.chulift.managementsystem.base;
 
 import com.github.chulift.managementsystem.exceptions.MvpViewNotAttachedException;
 

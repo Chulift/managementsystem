@@ -1,10 +1,12 @@
-package com.github.chulift.managementsystem;
+package com.github.chulift.managementsystem.base;
 
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public abstract class BaseMVPActivity<P extends BaseMVPInterface.Presenter> extends AppCompatActivity implements BaseMVPInterface.View {
+public abstract class BaseMVPActivity<P extends BaseMVPInterface.Presenter>
+        extends AppCompatActivity
+        implements BaseMVPInterface.View {
     private P presenter;
     @SuppressWarnings("unchecked")
     @Override
@@ -19,7 +21,7 @@ public abstract class BaseMVPActivity<P extends BaseMVPInterface.Presenter> exte
             setupInstance();
             setupView();
             getPresenter().onViewCreate();
-            if (savedInstanceState == null) initailize();
+            if (savedInstanceState == null) initialize();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -69,5 +71,5 @@ public abstract class BaseMVPActivity<P extends BaseMVPInterface.Presenter> exte
 
     public abstract void setupView();
 
-    public abstract void initailize();
+    public abstract void initialize();
 }

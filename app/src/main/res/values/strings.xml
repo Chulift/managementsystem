@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">managementsystem</string>
+    <!-- Add by Lift 2018-02-07 + -->
+    <!-- Menu -->
+    <string name="hr_menu_title">HR : Menu</string>
+    <string-array name="hr_menu">
+        <item>Leave Application</item>
+        <item>Over Time Work</item>
+        <item>Work Time Record</item>
+        <item>Domestic Trip</item>
+        <item>Monthly Attendance</item>
+    </string-array>
+
+    <!-- Notification -->
+    <string name="unprocessed_jobs">Unprocessed jobs</string>
+    <!-- Add by Lift 2018-02-07 - -->
 </resources>

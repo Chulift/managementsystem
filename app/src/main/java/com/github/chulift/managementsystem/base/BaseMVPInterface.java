@@ -1,4 +1,4 @@
-package com.github.chulift.managementsystem;
+package com.github.chulift.managementsystem.base;
 
 /**
  * Created by Chulift on 2/6/2018.
